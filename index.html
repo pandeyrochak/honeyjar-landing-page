@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome CDN -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- google fonts poppins -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Home</title>
+</head>
+<body>  
+    <div class="body-wrapper position-relative">
+        <div class="top-navbar position-relative d-flex justify-content-between justify-content-lg-around align-items-center w-100 p-3 px-4">
+            <div class="logo-wrapper">
+                <img src="./assets/images/logo.png" alt="">
+            </div>
+            <div id='nav-open-btn' class="menu-icon d-sm-none">
+                <img src="./assets/images/hamburger-icon.png" alt="">
+            </div>
+            <nav class="menu-items d-lg-flex align-items-lg-center justify-content-lg-evenly">
+                <div id="nav-close-btn">
+                    <i class="fas fa-times fa-2x d-lg-none"></i>
+                </div>
+                <ul class="primary-nav list-unstyled d-lg-flex">
+                    <li><a href="#">Digital Gold</a></li>
+                    <li><a href="#">Gold Loan</a></li>
+                    <li><a href="#">MSME Loan</a></li>
+                    <li><a href="#">Personal Loan</a></li>
+                    <li><a href="#">Vehicle Loan</a></li>
+                </ul>
+                <ul class="secondary-nav list-unstyled d-lg-flex">
+                    <button class="btn btn-normal">Login</button>
+                    <button class="btn btn-cta">Sign Up</button>
+                </ul>
+            </nav>
+        </div>
+        <section class="hero bg-light position-relative">
+            <div class="buy-now-card px-3">
+                <div class="buy-now d-flex flex-column mx-3 mt-3 ">
+                    <div class="buy-now-options row p-2 gap-3">
+                        <div class="col p-2 text-center active-option">BUY</div>
+                        <div class="col p-2 text-center">SELL</div>
+                        <div class="col p-2 text-center">GIFT</div>
+                        <div class="col p-2 text-center">SIP</div>
+                    </div>
+                    <div class="buy-now-mode d-flex justify-content-startm mt-3">
+                        <div class="form-check">
+                            <input type="radio" name="buy-mode" id="buy-mode-rupee" class="form-check-input">
+                            <label for="buy-mode-rupee" class="form-check-label">Buy in Rupee</label>
+                        </div>
+                        <div class="form-check mx-3">
+                            <input type="radio" name="buy-mode" id="buy-mode-grams" class="form-check-input">
+                            <label for="buy-mode-grams" class="form-check-label">Buy in grams</label>
+                        </div>
+                    </div>
+                    <div class="buy-now-amount mt-3">
+                        <div>
+                            <input type="text" name="amount" id="buy-amount" class="form-control border-0 border-bottom" placeholder="2000">
+                            <label for="amount" class="d-inline opacity-75">0.3234g</label>
+                            
+                        </div>
+                    </div>
+                    <div class="buy-now-amount-suggestions row gap-4 mt-3">
+                        <div class="col p-2 text-center rounded-pill border">Rs.1000</div>
+                        <div class="col p-2 text-center rounded-pill border">Rs.2000</div>
+                        <div class="col p-2 text-center rounded-pill border">Rs.3000</div>
+                        <div class="col p-2 text-center rounded-pill border">Rs.4000</div>
+                    </div>
+                    <div class="slide-to-see my-2">
+                        <span class="opacity-75">Slide to see graph <img src="./assets/images/Arrow 1.png" alt=""></span>
+                    </div>
+                    <button id="buy-now-btn" class="btn text-center">Buy Now</button>
+                </div>
+                <div class="buy-prices d-flex justify-content-between mx-5 mt-3">
+                    <div class="current-price">
+                        <span>Rs. 63,323.48</span> <span class="opacity-75 small">/gm</span><br>
+                        <span class="opacity-75">Price valid for </span> <span>04.34s</span>
+                    </div>
+                    <div class="current-price">
+                        <span>24K | 99%</span><br>
+                        <span class="opacity-75">Augmont</span>
+                    </div>
+                </div>
+            </div>
+            <div class="text-content d-flex justify-content-center align-items-center flex-column">
+                <div class="hero-title h3">
+                    <span>Saving has never been easier</span>
+                </div>
+                <div class="hero-subtitle">
+                    <span>Your one-stop solution for everything Digital Gold</span>
+                </div>
+            </div>
+            <div class="white-space"></div>
+        </section>
+        <section class="swarna-trust">
+            <div class="trust d-flex flex-column align-items-center px-5">
+                <div class="trust-logo text-center my-3">
+                    <img src="./assets/images/trust-swarna.png" alt="" >
+                </div>
+                <div class="trust-text mx-3 text-center">
+                    <span>The highest quality of innovation, trusted by the nation, that brings you modern, everyday designs.</span>
+                </div>
+            </div>
+        </section>
+        <section class="latest-offers py-4">
+            <div class="offers text-center h1">
+                <span>Check out our latest 🤩</span><br>
+                <div class="offers-list">
+                    <img src="./assets/images/Frame 256.png" alt="">
+                    <img src="./assets/images/offer.png" alt="">
+                    <img src="./assets/images/Frame 258.png" alt="">
+                </div>
+                <div class="offers-indicators">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </section>
+        <section class="how-to">
+            <div class="d-flex flex-wrap justify-content-center">
+                <div class="how-to-text align-self-center">
+                    <div class="h2">Unbelievably Simple,
+                        Incredibly Secure 😇</div>
+                    <div class="opacity-75">Dealing with digital gold can’t get any simpler</div>
+                </div>
+                <div class="how-to-process flex-grow-1">
+                    <div class="how-to-tabs row p-1 gap-1">
+                        <div class="col p-2 text-center active-option">How to Buy?</div>
+                        <div class="col p-2 text-center">How to Sell?</div>
+                        <div class="col p-2 text-center">How to Redeem?</div>
+                    </div>
+                    <div class="how-to-steps text-center">
+                        <img src="./assets/images/how-to steps.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="protection">
+            <div class="protection-header">
+                <span class="h1">We've got your back 💪</span>
+            </div>
+            <div class="protection-features">
+                <!-- row 1 -->
+                <div class="d-flex flex-wrap justify-content-evenly">
+                    <div class="feature feature-1 text-center flex-grow-1">
+                        <img src="./assets/images/lock.png" alt=""><br>
+                        Secured with multiple layers of <span>protection.</span>
+                    </div>
+                    <div class="feature feature-2 text-center flex-grow-1">
+                        <img src="./assets/images/ri_safe-fill.png" alt=""><br>
+                        <span>Augmont,</span> your well known trusted provider
+                    </div>
+                    <div class="feature feature-3 text-center flex-grow-1">
+                        <img src="./assets/images/Group 3816.png" alt=""><br>
+                        Convert into <span>physical gold</span> anytime
+                    </div>
+                </div>
+                <!-- row 2 -->
+                <div class="d-flex flex-wrap justify-content-evenly">
+                    <div class="feature feature-4 text-center flex-grow-1">
+                        <img src="./assets/images/Group 3813.png" alt=""><br>
+                        Buy for as <span>low</span> as Rs 1
+                    </div>
+                    <div class="feature feature-5 text-center flex-grow-1">
+                        <img src="./assets/images/eos-icons_trusted-organization.png" alt=""><br>
+                        <span>24K,</span> 99.99% pure
+                    </div>
+                </div> 
+            </div>
+        </section>
+        <section class="now-its-time">  
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="macbook-image col text-center">
+                        <img src="./assets/images/Macbook Pro.png" alt="">
+                    </div>
+                    <div class="col text-lg-start text-center mt-4 mt-lg-0">
+                        <div class="h1"><span>Now it's time! ⏰</span></div>
+                        <div class="text">Purchase digital gold in no time, get benefits of getting loans, SIPs, gifiting and take advantage of several redemption options.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="start-investing d-flex flex-column justify-content-center align-items-center">
+            <div class="testimonials d-flex gap-3">
+                <div class="testimonial-card">
+                    <div class="container">
+                        <div class="d-flex flex-wrap justify-content-center justify-content-lg-around">
+                            <div class="customer-details-wrapper text-center">
+                                <div class="customer-image-wrapper">
+                                    <img src="./assets/images/user.png" alt="">
+                                </div>
+                                <div class="customer-title-wrapper">
+                                    <span>Peter Davidson</span><br>
+                                    <span class="opacity-75 small">CEO of Oakwood Inc</span>
+                                </div>
+                            </div>
+                            <div class="customer-review small text-center text-lg-start mt-4 mt-lg-0 align-self-center">
+                                <span>“Honey Jar keeps me in financial discipline and helps me take the worries out of my mind“</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="container">
+                        <div class="d-flex flex-wrap justify-content-center justify-content-lg-around">
+                            <div class="customer-details-wrapper text-center">
+                                <div class="customer-image-wrapper">
+                                    <img src="./assets/images/user.png" alt="">
+                                </div>
+                                <div class="customer-title-wrapper">
+                                    <span>Peter Davidson</span><br>
+                                    <span class="opacity-75 small">CEO of Oakwood Inc</span>
+                                </div>
+                            </div>
+                            <div class="customer-review small text-center text-lg-start mt-4 mt-lg-0 align-self-center">
+                                <span>“Honey Jar keeps me in financial discipline and helps me take the worries out of my mind“</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="container">
+                        <div class="d-flex flex-wrap justify-content-center justify-content-lg-around">
+                            <div class="customer-details-wrapper text-center">
+                                <div class="customer-image-wrapper">
+                                    <img src="./assets/images/user.png" alt="">
+                                </div>
+                                <div class="customer-title-wrapper">
+                                    <span>Peter Davidson</span><br>
+                                    <span class="opacity-75 small">CEO of Oakwood Inc</span>
+                                </div>
+                            </div>
+                            <div class="customer-review small text-center text-lg-start mt-4 mt-lg-0 align-self-center">
+                                <span>“Honey Jar keeps me in financial discipline and helps me take the worries out of my mind“</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="container">
+                        <div class="d-flex flex-wrap justify-content-center justify-content-lg-around">
+                            <div class="customer-details-wrapper text-center">
+                                <div class="customer-image-wrapper">
+                                    <img src="./assets/images/user.png" alt="">
+                                </div>
+                                <div class="customer-title-wrapper">
+                                    <span>Peter Davidson</span><br>
+                                    <span class="opacity-75 small">CEO of Oakwood Inc</span>
+                                </div>
+                            </div>
+                            <div class="customer-review small text-center text-lg-start mt-4 mt-lg-0 align-self-center">
+                                <span>“Honey Jar keeps me in financial discipline and helps me take the worries out of my mind“</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="container">
+                        <div class="d-flex flex-wrap justify-content-center justify-content-lg-around">
+                            <div class="customer-details-wrapper text-center">
+                                <div class="customer-image-wrapper">
+                                    <img src="./assets/images/user.png" alt="">
+                                </div>
+                                <div class="customer-title-wrapper">
+                                    <span>Peter Davidson</span><br>
+                                    <span class="opacity-75 small">CEO of Oakwood Inc</span>
+                                </div>
+                            </div>
+                            <div class="customer-review small text-center text-lg-start mt-4 mt-lg-0 align-self-center">
+                                <span>“Honey Jar keeps me in financial discipline and helps me take the worries out of my mind“</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials gap-3 d-none d-lg-flex">
+                <div class="testimonial-card">
+                    <div class="container">
+                        <div class="d-flex flex-wrap justify-content-center justify-content-lg-around">
+                            <div class="customer-details-wrapper text-center">
+                                <div class="customer-image-wrapper">
+                                    <img src="./assets/images/user.png" alt="">
+                                </div>
+                                <div class="customer-title-wrapper">
+                                    <span>Peter Davidson</span><br>
+                                    <span class="opacity-75 small">CEO of Oakwood Inc</span>
+                                </div>
+                            </div>
+                            <div class="customer-review small text-center text-lg-start mt-4 mt-lg-0 align-self-center">
+                                <span>“Honey Jar keeps me in financial discipline and helps me take the worries out of my mind“</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="container">
+                        <div class="d-flex flex-wrap justify-content-center justify-content-lg-around">
+                            <div class="customer-details-wrapper text-center">
+                                <div class="customer-image-wrapper">
+                                    <img src="./assets/images/user.png" alt="">
+                                </div>
+                                <div class="customer-title-wrapper">
+                                    <span>Peter Davidson</span><br>
+                                    <span class="opacity-75 small">CEO of Oakwood Inc</span>
+                                </div>
+                            </div>
+                            <div class="customer-review small text-center text-lg-start mt-4 mt-lg-0 align-self-center">
+                                <span>“Honey Jar keeps me in financial discipline and helps me take the worries out of my mind“</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="container">
+                        <div class="d-flex flex-wrap justify-content-center justify-content-lg-around">
+                            <div class="customer-details-wrapper text-center">
+                                <div class="customer-image-wrapper">
+                                    <img src="./assets/images/user.png" alt="">
+                                </div>
+                                <div class="customer-title-wrapper">
+                                    <span>Peter Davidson</span><br>
+                                    <span class="opacity-75 small">CEO of Oakwood Inc</span>
+                                </div>
+                            </div>
+                            <div class="customer-review small text-center text-lg-start mt-4 mt-lg-0 align-self-center">
+                                <span>“Honey Jar keeps me in financial discipline and helps me take the worries out of my mind“</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="container">
+                        <div class="d-flex flex-wrap justify-content-center justify-content-lg-around">
+                            <div class="customer-details-wrapper text-center">
+                                <div class="customer-image-wrapper">
+                                    <img src="./assets/images/user.png" alt="">
+                                </div>
+                                <div class="customer-title-wrapper">
+                                    <span>Peter Davidson</span><br>
+                                    <span class="opacity-75 small">CEO of Oakwood Inc</span>
+                                </div>
+                            </div>
+                            <div class="customer-review small text-center text-lg-start mt-4 mt-lg-0 align-self-center">
+                                <span>“Honey Jar keeps me in financial discipline and helps me take the worries out of my mind“</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="container">
+                        <div class="d-flex flex-wrap justify-content-center justify-content-lg-around">
+                            <div class="customer-details-wrapper text-center">
+                                <div class="customer-image-wrapper">
+                                    <img src="./assets/images/user.png" alt="">
+                                </div>
+                                <div class="customer-title-wrapper">
+                                    <span>Peter Davidson</span><br>
+                                    <span class="opacity-75 small">CEO of Oakwood Inc</span>
+                                </div>
+                            </div>
+                            <div class="customer-review small text-center text-lg-start mt-4 mt-lg-0 align-self-center">
+                                <span>“Honey Jar keeps me in financial discipline and helps me take the worries out of my mind“</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="h1 my-3">Start Investing Now!</div>
+            <div class="btn btn-cta">Sign Up</div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col footer-logo-wrapper text-center">
+                        <img src="./assets/images/logo-white.png" alt="">
+                    </div>
+                    <div class="col footer-links-wrapper d-flex justify-content-between">
+                        <ul class="list-unstyled">
+                            <li><a href="#">Help</a></li>
+                            <li><a href="#">Terms and Conditions</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">About Us</a></li>
+                        </ul>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Digital Gold</a></li>
+                            <li><a href="#">Gold Loan</a></li>
+                            <li><a href="#">MSME Loan</a></li>
+                            <li><a href="#">Personal Loan</a></li>
+                            <li><a href="#">Vehicle Loan</a></li>
+                        </ul>
+                    </div>
+                    <div class="col d-flex flex-column align-items-center">
+                        <ul class="d-flex footer-social-icons justify-content-around list-unstyled">
+                            <li><a href="#"><img src="./assets/images/ant-design_linkedin-filled.png" alt=""></a></li>
+                            <li><a href="#"><img src="./assets/images/bi_instagram.png" alt=""></a></li>
+                            <li><a href="#"><img src="./assets/images/Group.png" alt=""></a></li>
+                            <li><a href="#"><img src="./assets/images/akar-icons_facebook-fill.png" alt=""></a></li>
+                        </ul>
+                        <div class="footer-trustee-idbi w-100 my-3 text-center">
+                            <p >Acting as Trustee</p>
+                            <div>
+                                <img src="./assets/images/idbi.png" alt="">
+                            </div>
+                        </div>
+                        <div class="footer-augmont text-center">
+                            <p>Powered by Augmont</p>
+                            <div>
+                                <img src="./assets/images/augmont.png" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <p class="text-center small">Muthoot Exim Pvt. Ltd. Muthoot Tower, 06th Floor, M.G Road, Ernakulam - 682 035.
+                    Call us on Tollfree no. 1800 102 1616 | E-Mail us on eswarna@muthootexim.com | CIN:U51909KL1998PTC012492 </p>
+                    <hr>
+                <p class="text-center small">Copyright © 2020 by Muthoot Exim Pvt. Ltd. All Rights Reserved.</p>
+            </div>
+        </footer>  
+    </div>
+    <!-- Custom JS -->
+    <script src="./assets/js/app.js"></script>
+    <!-- Boostrap JS bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

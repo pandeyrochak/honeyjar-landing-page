@@ -1,0 +1,447 @@
+body {
+  font-family: 'Poppins',sans-serif !important;
+}
+
+ul {
+  margin-bottom: 0 !important;
+}
+
+.nav-toggler {
+  display: block;
+}
+
+#nav-open-btn, #nav-close-btn {
+  cursor: pointer;
+}
+
+nav {
+  position: fixed;
+  display: none;
+  width: 60%;
+  background-color: #e2e2e2;
+  height: 100vh;
+  z-index: 999;
+  right: 0;
+  top: 0;
+}
+
+nav i {
+  position: relative;
+  float: right;
+  margin-top: 1em;
+  margin-right: 1em;
+  border: 1px solid black;
+  padding: .3em .4em;
+  color: black;
+}
+
+nav ul.primary-nav {
+  padding: 7em 2em;
+}
+
+nav ul.primary-nav li {
+  display: block;
+  margin: 1em;
+  padding: .2em;
+  border-left: 5px solid transparent;
+}
+
+nav ul.primary-nav li a {
+  text-decoration: none;
+  color: #110a0a;
+  padding-left: .4em;
+}
+
+nav ul.primary-nav li:hover {
+  font-weight: 600;
+  border-left: 5px solid #EFC900;
+}
+
+nav ul.secondary-nav {
+  text-align: center;
+}
+
+nav ul.secondary-nav .btn-normal {
+  border-radius: 10px;
+}
+
+nav ul.secondary-nav .btn-cta {
+  background-color: #EFC900;
+  border: none;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.text-content {
+  background: url("../images/hero-bg-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30vh;
+  color: white;
+  width: 100%;
+}
+
+.text-content .hero-title {
+  text-align: center;
+  width: 40%;
+}
+
+.text-content .hero-subtitle {
+  text-align: center;
+  width: 40%;
+}
+
+.white-space {
+  background-color: white;
+  height: 50vh;
+}
+
+.buy-now-card {
+  position: absolute;
+  width: 90%;
+  max-width: 600px;
+  height: auto;
+  padding-bottom: 10px;
+  top: 15em;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  width: 100%;
+}
+
+.buy-now-card .buy-now {
+  background-color: white;
+  padding: 1em;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.buy-now-card .buy-now .buy-now-options {
+  border-radius: 10px;
+  color: black;
+  background-color: #F6F7FB;
+}
+
+#buy-now-btn {
+  background-color: #FFD600;
+  border-radius: 8px;
+  padding: 8px 4px;
+  margin-bottom: 1em;
+}
+
+.active-option {
+  color: white;
+  background-color: #6510A5;
+  border-radius: 10px;
+}
+
+section.swarna-trust {
+  padding: 2em 1em;
+  background-color: #F6F7FB;
+}
+
+section.swarna-trust .trust .trust-logo {
+  max-width: 214px;
+  height: 91px;
+}
+
+section.swarna-trust .trust .trust-logo img {
+  width: 100%;
+  height: auto;
+}
+
+section.swarna-trust .trust .trust-text {
+  color: #A873D1;
+  font-size: 1em;
+  font-weight: 500;
+  max-width: 500px;
+}
+
+.latest-offers {
+  background-color: #F6F7FB;
+}
+
+.latest-offers .offers .offers-list {
+  margin-top: 1.2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  overflow: auto;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.latest-offers .offers .offers-list img {
+  padding: 1em;
+  width: 100%;
+  max-width: 400px;
+}
+
+.latest-offers .offers .offers-list::-webkit-scrollbar {
+  display: none;
+}
+
+.latest-offers .offers .offers-indicators {
+  text-align: center;
+}
+
+.latest-offers .offers .offers-indicators span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 .2em;
+  background-color: #bdbdbd;
+  border-radius: 50%;
+}
+
+.latest-offers .offers .offers-indicators span:nth-child(1) {
+  background-color: #2f2f2f;
+}
+
+section.how-to {
+  padding: 3em 1.5em;
+}
+
+section.how-to .how-to-text {
+  text-align: center;
+  padding: 1em;
+  margin: 1.5em 2em;
+}
+
+section.how-to .how-to-process {
+  max-width: 600px;
+}
+
+section.how-to .how-to-process .how-to-tabs {
+  font-size: .9em;
+  background-color: #F6F7FB;
+  border-radius: 10px;
+}
+
+section.how-to .how-to-process .how-to-steps {
+  margin: 2em 1em;
+}
+
+section.how-to .how-to-process img {
+  width: 50%;
+  max-width: 210px;
+  height: auto;
+}
+
+section.protection {
+  padding: 3em 1.5em;
+}
+
+section.protection .protection-header {
+  text-align: center;
+  padding: 1em;
+  margin: 1.5em auto;
+}
+
+section.protection .protection-features {
+  padding: 1em 4em;
+}
+
+section.protection .feature {
+  font-size: 20px;
+  max-width: 325px;
+  padding: 1em;
+}
+
+section.protection .feature img {
+  width: 50%;
+  max-width: 50px;
+  margin: .5em;
+}
+
+section.protection .feature-1 > span {
+  font-weight: 500;
+  color: #6510A5;
+}
+
+section.protection .feature-2 > span {
+  font-weight: 500;
+  color: #E3513E;
+}
+
+section.protection .feature-3 > span {
+  font-weight: 500;
+  color: #EFC900;
+}
+
+section.protection .feature-4 > span {
+  font-weight: 500;
+  color: #F55D82;
+}
+
+section.protection .feature-5 > span {
+  font-weight: 500;
+  color: #3FADA7;
+}
+
+section.now-its-time {
+  background: url("../images/now-its-time-background.png");
+  height: 60vh;
+  padding: 3em 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-size: contain;
+  /* background-repeat: no-repeat; */
+}
+
+section.now-its-time .macbook-image img {
+  width: 100%;
+  min-width: 300px;
+  max-width: 450px;
+  padding-left: 18px;
+}
+
+section.now-its-time .text {
+  width: 100%;
+  max-width: 432px;
+}
+
+section.start-investing {
+  padding: 3em 1.5em;
+}
+
+section.start-investing .testimonials {
+  width: 100%;
+  padding: 1em;
+  overflow-x: scroll;
+  background-color: #F6F7FB;
+}
+
+section.start-investing .testimonials::-webkit-scrollbar {
+  display: none;
+}
+
+section.start-investing .testimonials .testimonial-card {
+  display: inline-block;
+  width: 100%;
+  min-width: 346px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: white;
+  -webkit-box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  padding: 1em;
+}
+
+section.start-investing .testimonials .testimonial-card .customer-image-wrapper img {
+  max-width: 68px;
+}
+
+section.start-investing .testimonials .testimonial-card .customer-review {
+  max-width: 70%;
+}
+
+section.start-investing .btn-cta {
+  background-color: #EFC900;
+  border: none;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+footer.footer {
+  padding: 2em 1.4em;
+  background-color: #434A54;
+}
+
+footer.footer .footer-logo-wrapper {
+  width: 100%;
+}
+
+footer.footer .footer-logo-wrapper img {
+  max-width: 180px;
+}
+
+footer.footer .footer-links-wrapper {
+  min-width: 380px;
+}
+
+footer.footer .footer-links-wrapper li {
+  margin: 1em 0;
+}
+
+footer.footer .footer-links-wrapper li a {
+  text-decoration: none;
+  color: white;
+}
+
+footer.footer .footer-social-icons {
+  width: 100%;
+}
+
+footer.footer .footer-social-icons img {
+  max-width: 32px;
+}
+
+footer.footer .footer-trustee-idbi {
+  color: white;
+}
+
+footer.footer .footer-trustee-idbi img {
+  width: 100%;
+  max-width: 150px;
+}
+
+footer.footer .footer-augmont {
+  color: white;
+}
+
+footer.footer .footer-augmont img {
+  width: 100%;
+  max-width: 150px;
+}
+
+footer.footer p {
+  color: white;
+}
+
+@media (min-width: 990px) {
+  nav {
+    position: unset;
+    width: 70%;
+    height: auto;
+    background-color: transparent;
+    z-index: 0;
+  }
+  nav ul.primary-nav {
+    padding: unset;
+  }
+  nav ul.primary-nav li {
+    margin: 0em 1.2em;
+    border-bottom: 5px solid transparent;
+    border-left: none;
+  }
+  nav ul.primary-nav li:hover {
+    border-left: none;
+    border-bottom: 5px solid #EFC900;
+  }
+  nav ul.secondary-nav {
+    border-bottom: 5px solid transparent;
+  }
+  .latest-offers {
+    margin: 2em 6em;
+    padding: 1.5em;
+  }
+  section.start-investing .customer-review {
+    padding-left: 25px;
+  }
+  section.start-investing .testimonial-card {
+    min-width: 500px !important;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

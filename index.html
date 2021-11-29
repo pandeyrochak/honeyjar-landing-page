@@ -41,42 +41,69 @@
             </nav>
         </div>
         <section class="hero bg-light position-relative">
-            <div class="buy-now-card px-3">
-                <div class="buy-now d-flex flex-column mx-3 mt-3 ">
-                    <div class="buy-now-options row p-2 gap-3">
-                        <div class="col p-2 text-center active-option">BUY</div>
-                        <div class="col p-2 text-center">SELL</div>
-                        <div class="col p-2 text-center">GIFT</div>
-                        <div class="col p-2 text-center">SIP</div>
-                    </div>
-                    <div class="buy-now-mode d-flex justify-content-startm mt-3">
-                        <div class="form-check">
-                            <input type="radio" name="buy-mode" id="buy-mode-rupee" class="form-check-input">
-                            <label for="buy-mode-rupee" class="form-check-label">Buy in Rupee</label>
+            <div class="buy-now-card px-3 d-flex flex-column">
+                <div class="container buy-now-wrapper d-flex">
+                    <div class="buy-now">
+                        <div class="d-flex flex-column mx-3 mt-3 ">
+                            <div class="buy-now-options row p-2 gap-2">
+                                <div class="col p-2 text-center active-option">BUY</div>
+                                <div class="col p-2 text-center">SELL</div>
+                                <div class="col p-2 text-center">GIFT</div>
+                                <div class="col p-2 text-center">SIP</div>
+                            </div>
+                            <div class="buy-now-mode d-flex justify-content-startm mt-3">
+                                <div class="form-check">
+                                    <input type="radio" name="buy-mode" id="buy-mode-rupee" class="form-check-input">
+                                    <label for="buy-mode-rupee" class="form-check-label">Buy in Rupee</label>
+                                </div>
+                                <div class="form-check mx-3">
+                                    <input type="radio" name="buy-mode" id="buy-mode-grams" class="form-check-input">
+                                    <label for="buy-mode-grams" class="form-check-label">Buy in grams</label>
+                                </div>
+                            </div>
+                            <div class="buy-now-amount mt-3">
+                                <div>
+                                    <input type="text" name="amount" id="buy-amount" class="form-control border-0 border-bottom" placeholder="2000">
+                                    <label for="amount" class="d-inline opacity-75">0.3234g</label>
+                                    
+                                </div>
+                            </div>
+                            <div class="buy-now-amount-suggestions row gap-4 mt-3">
+                                <div class="col p-2 text-center rounded-pill border">Rs.1000</div>
+                                <div class="col p-2 text-center rounded-pill border">Rs.2000</div>
+                                <div class="col p-2 text-center rounded-pill border">Rs.3000</div>
+                                <div class="col p-2 text-center rounded-pill border">Rs.4000</div>
+                            </div>
+                            <div class="slide-to-see my-2">
+                                <span class="opacity-75">Slide to see graph <img src="./assets/images/Arrow 1.png" alt=""></span>
+                            </div>
+                            <button id="buy-now-btn" class="btn text-center">Buy Now</button>
                         </div>
-                        <div class="form-check mx-3">
-                            <input type="radio" name="buy-mode" id="buy-mode-grams" class="form-check-input">
-                            <label for="buy-mode-grams" class="form-check-label">Buy in grams</label>
-                        </div>
                     </div>
-                    <div class="buy-now-amount mt-3">
-                        <div>
-                            <input type="text" name="amount" id="buy-amount" class="form-control border-0 border-bottom" placeholder="2000">
-                            <label for="amount" class="d-inline opacity-75">0.3234g</label>
+                    <div class="chart d-none d-lg-block">
+                        <div class="container chart-wrapper d-flex flex-column justify-content-between">
+                            <div class="chart-prices d-flex justify-content-between">
+                                <div class="chart-prices-min">
+                                    <span>Rs. 63,342</span><br><span class="opacity-75">MIN</span>
+                                </div>
+                                <div class="chart-prices-max">
+                                    <span>Rs. 63,342</span><br><span class="opacity-75">MAX</span>
+                                </div>
+                            </div>
+                            <div class="chart-image text-center">
+                                <img src="./assets/images/chart-curve.png" alt="">
+                            </div>
+                            <div class="chart-timeline d-flex justify-content-between" style="font-size:.8em;">
+                                <div>This month</div>
+                                <div class="opacity-75">3 months</div>
+                                <div class="opacity-75">6 months</div>
+                                <div class="opacity-75">1 year</div>
+                            </div>
                             
                         </div>
                     </div>
-                    <div class="buy-now-amount-suggestions row gap-4 mt-3">
-                        <div class="col p-2 text-center rounded-pill border">Rs.1000</div>
-                        <div class="col p-2 text-center rounded-pill border">Rs.2000</div>
-                        <div class="col p-2 text-center rounded-pill border">Rs.3000</div>
-                        <div class="col p-2 text-center rounded-pill border">Rs.4000</div>
-                    </div>
-                    <div class="slide-to-see my-2">
-                        <span class="opacity-75">Slide to see graph <img src="./assets/images/Arrow 1.png" alt=""></span>
-                    </div>
-                    <button id="buy-now-btn" class="btn text-center">Buy Now</button>
                 </div>
+
                 <div class="buy-prices d-flex justify-content-between mx-5 mt-3">
                     <div class="current-price">
                         <span>Rs. 63,323.48</span> <span class="opacity-75 small">/gm</span><br>
@@ -88,6 +115,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="text-content d-flex justify-content-center align-items-center flex-column">
                 <div class="hero-title h3">
                     <span>Saving has never been easier</span>

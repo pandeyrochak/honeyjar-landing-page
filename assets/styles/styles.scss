@@ -70,12 +70,12 @@ nav{
     color: white;
     width: 100%;
     .hero-title{
-    text-align: center;
-     width: 40%;   
+        text-align: center;
+        width: 60%;   
     }
     .hero-subtitle{ 
         text-align: center;
-        width: 40%;
+        width: 60%;
     }
 }
 .white-space{
@@ -89,7 +89,7 @@ nav{
     max-width: 950px;
     height: auto;
     padding-bottom: 10px;
-    top: 15em;
+    top: 17em;
     left: 50%;
     transform: translate(-50%);
     width: 100%;
@@ -102,7 +102,6 @@ nav{
         background-color: white;
     }
     .buy-now{
-        padding:1em;
         width: 100%;
         .buy-now-options{
             border-radius: 10px;
@@ -205,13 +204,15 @@ section.swarna-trust{
 // How to section
 // ***************
 section.how-to{
-    padding: 3em 1.5em;
+    position: relative;
+    
     .how-to-text{
         text-align: center;
         padding: 1em;
         margin: 1.5em 2em;
     }
     .how-to-process{
+        margin: 3em 1em;
         max-width: 600px;
         .how-to-tabs{
             font-size: .9em;
@@ -219,10 +220,25 @@ section.how-to{
             border-radius: 10px;
             li{
                 cursor: pointer;
+                
             }
         }
         .how-to-steps{
-            margin: 2em 1em;
+            margin: 2em 2em 2em auto ;
+            width:70%;
+            .step{
+                position: relative;
+                img{
+                    max-width: 47px;
+                }
+                &:nth-child(1)::after,&:nth-child(2)::after{
+                    content: url('../images/line.png');
+                    position: absolute;
+                    left: 16%;
+                    top: 3em;
+                }
+                    
+            }
         }
         img{
             width: 50%;
@@ -235,14 +251,14 @@ section.how-to{
 // Protection Section
 // ***************
 section.protection{
-    padding: 3em 1.5em;
+    padding: 3em 0em;
     .protection-header{
         text-align: center;
         padding: 1em;
-        margin: 1.5em auto;
+        margin: 3em auto;
     }
     .protection-features{
-        padding: 1em 4em;
+        padding: 3em 4em;
     }
     .feature{
         font-size: 20px;
@@ -304,6 +320,7 @@ section.now-its-time{
 // ************************
 section.start-investing{
     padding: 3em 1.5em;
+    background-color: #F6F7FB;
     .testimonials{
         
         width: 100%;
@@ -422,7 +439,21 @@ footer.footer{
         margin: 2em 6em;
         padding: 1.5em;
     }
-
+    section.how-to{
+        &::before{
+            content: url('../images/how-to-bg.png');
+            position: absolute;
+            
+        }
+    }
+    section.protection{
+        &::after{
+            content: url('../images/protection-bg.png');
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
     section.start-investing{
         .customer-review{
             padding-left: 25px;

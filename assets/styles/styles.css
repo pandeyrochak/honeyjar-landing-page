@@ -83,12 +83,12 @@ nav ul.secondary-nav .btn-cta {
 
 .text-content .hero-title {
   text-align: center;
-  width: 40%;
+  width: 60%;
 }
 
 .text-content .hero-subtitle {
   text-align: center;
-  width: 40%;
+  width: 60%;
 }
 
 .white-space {
@@ -102,7 +102,7 @@ nav ul.secondary-nav .btn-cta {
   max-width: 950px;
   height: auto;
   padding-bottom: 10px;
-  top: 15em;
+  top: 17em;
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
@@ -121,7 +121,6 @@ nav ul.secondary-nav .btn-cta {
 }
 
 .buy-now-card .buy-now {
-  padding: 1em;
   width: 100%;
 }
 
@@ -219,7 +218,7 @@ section.swarna-trust .trust .trust-text {
 }
 
 section.how-to {
-  padding: 3em 1.5em;
+  position: relative;
 }
 
 section.how-to .how-to-text {
@@ -229,6 +228,7 @@ section.how-to .how-to-text {
 }
 
 section.how-to .how-to-process {
+  margin: 3em 1em;
   max-width: 600px;
 }
 
@@ -243,7 +243,23 @@ section.how-to .how-to-process .how-to-tabs li {
 }
 
 section.how-to .how-to-process .how-to-steps {
-  margin: 2em 1em;
+  margin: 2em 2em 2em auto;
+  width: 70%;
+}
+
+section.how-to .how-to-process .how-to-steps .step {
+  position: relative;
+}
+
+section.how-to .how-to-process .how-to-steps .step img {
+  max-width: 47px;
+}
+
+section.how-to .how-to-process .how-to-steps .step:nth-child(1)::after, section.how-to .how-to-process .how-to-steps .step:nth-child(2)::after {
+  content: url("../images/line.png");
+  position: absolute;
+  left: 16%;
+  top: 3em;
 }
 
 section.how-to .how-to-process img {
@@ -253,17 +269,17 @@ section.how-to .how-to-process img {
 }
 
 section.protection {
-  padding: 3em 1.5em;
+  padding: 3em 0em;
 }
 
 section.protection .protection-header {
   text-align: center;
   padding: 1em;
-  margin: 1.5em auto;
+  margin: 3em auto;
 }
 
 section.protection .protection-features {
-  padding: 1em 4em;
+  padding: 3em 4em;
 }
 
 section.protection .feature {
@@ -331,6 +347,7 @@ section.now-its-time .text {
 
 section.start-investing {
   padding: 3em 1.5em;
+  background-color: #F6F7FB;
 }
 
 section.start-investing .testimonials {
@@ -458,6 +475,16 @@ footer.footer p {
   .latest-offers {
     margin: 2em 6em;
     padding: 1.5em;
+  }
+  section.how-to::before {
+    content: url("../images/how-to-bg.png");
+    position: absolute;
+  }
+  section.protection::after {
+    content: url("../images/protection-bg.png");
+    position: absolute;
+    top: 0;
+    right: 0;
   }
   section.start-investing .customer-review {
     padding-left: 25px;

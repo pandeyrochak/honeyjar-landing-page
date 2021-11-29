@@ -66,7 +66,7 @@ nav{
     background: url('../images/hero-bg-image.png');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 30vh;
+    height: 40vh;
     color: white;
     width: 100%;
     .hero-title{
@@ -93,6 +93,9 @@ nav{
     left: 50%;
     transform: translate(-50%);
     width: 100%;
+    .buy-now-options li{
+        cursor: pointer;
+    }
     .buy-now-wrapper{
         border-radius: 10px;
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
@@ -106,6 +109,11 @@ nav{
             color: black;
             background-color: #F6F7FB;
         }
+        .buy-now-amount-suggestions{
+            li{
+                cursor: pointer;
+            }
+        }
     }
     .chart{
         padding: 3em 1em;
@@ -115,6 +123,7 @@ nav{
         }
     }
 }
+
 #buy-now-btn{
     background-color: #FFD600;
     border-radius: 8px;
@@ -124,8 +133,9 @@ nav{
 .active-option{
     color: white;
     background-color: #6510A5;
-    border-radius: 10px;
+    border-radius: 10px;    
 }
+
 
 // *************
 // Trust and offers section
@@ -159,12 +169,11 @@ section.swarna-trust{
         
         .offers-list{
             margin-top: 1.2em;
-            display: flex;
-            justify-content: space-evenly;
             overflow: auto;
             width: 100%;
             margin-left: auto;
             margin-right: auto;
+            
             img{
                 padding: 1em;
                 width: 100%;
@@ -208,6 +217,9 @@ section.how-to{
             font-size: .9em;
             background-color: #F6F7FB;
             border-radius: 10px;
+            li{
+                cursor: pointer;
+            }
         }
         .how-to-steps{
             margin: 2em 1em;

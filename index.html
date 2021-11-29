@@ -42,15 +42,23 @@
         </div>
         <section class="hero bg-light position-relative">
             <div class="buy-now-card px-3 d-flex flex-column">
+                <div class="d-lg-block d-none mb-3" style="background-color: white; border-radius: 10px;padding:.5em 1em ;">
+                    <ul class="buy-now-options row gap-2 list-unstyled">
+                        <li class="col p-2 text-center active-option">BUY</>
+                        <li class="col p-2 text-center">SELL</li>
+                        <li class="col p-2 text-center">GIFT</li>
+                        <li class="col p-2 text-center">SIP</li>
+                    </ul>
+                </div>
                 <div class="container buy-now-wrapper d-flex">
                     <div class="buy-now">
                         <div class="d-flex flex-column mx-3 mt-3 ">
-                            <div class="buy-now-options row p-2 gap-2">
-                                <div class="col p-2 text-center active-option">BUY</div>
-                                <div class="col p-2 text-center">SELL</div>
-                                <div class="col p-2 text-center">GIFT</div>
-                                <div class="col p-2 text-center">SIP</div>
-                            </div>
+                            <ul class="buy-now-options row p-2 gap-2 d-lg-none list-unstyled">
+                                <li class="col p-2 text-center active-option">BUY</li>
+                                <li class="col p-2 text-center">SELL</li>
+                                <li class="col p-2 text-center">GIFT</li>
+                                <li class="col p-2 text-center">SIP</li>
+                            </ul>
                             <div class="buy-now-mode d-flex justify-content-startm mt-3">
                                 <div class="form-check">
                                     <input type="radio" name="buy-mode" id="buy-mode-rupee" class="form-check-input">
@@ -68,12 +76,12 @@
                                     
                                 </div>
                             </div>
-                            <div class="buy-now-amount-suggestions row gap-4 mt-3">
-                                <div class="col p-2 text-center rounded-pill border">Rs.1000</div>
-                                <div class="col p-2 text-center rounded-pill border">Rs.2000</div>
-                                <div class="col p-2 text-center rounded-pill border">Rs.3000</div>
-                                <div class="col p-2 text-center rounded-pill border">Rs.4000</div>
-                            </div>
+                            <ul class="buy-now-amount-suggestions row gap-2 mt-3 list-unstyled">
+                                <li class="col p-2 text-center rounded-pill border">Rs.1000</li>
+                                <li class="col p-2 text-center rounded-pill border">Rs.2000</li>
+                                <li class="col p-2 text-center rounded-pill border">Rs.3000</li>
+                                <li class="col p-2 text-center rounded-pill border">Rs.4000</li>
+                            </ul>
                             <div class="slide-to-see my-2">
                                 <span class="opacity-75">Slide to see graph <img src="./assets/images/Arrow 1.png" alt=""></span>
                             </div>
@@ -139,7 +147,7 @@
         <section class="latest-offers py-4">
             <div class="offers text-center h1">
                 <span>Check out our latest 🤩</span><br>
-                <div class="offers-list">
+                <div class="offers-list d-flex justify-content-center">
                     <img src="./assets/images/Frame 256.png" alt="">
                     <img src="./assets/images/offer.png" alt="">
                     <img src="./assets/images/Frame 258.png" alt="">
@@ -159,11 +167,11 @@
                     <div class="opacity-75">Dealing with digital gold can’t get any simpler</div>
                 </div>
                 <div class="how-to-process flex-grow-1">
-                    <div class="how-to-tabs row p-1 gap-1">
-                        <div class="col p-2 text-center active-option">How to Buy?</div>
-                        <div class="col p-2 text-center">How to Sell?</div>
-                        <div class="col p-2 text-center">How to Redeem?</div>
-                    </div>
+                    <ul class="how-to-tabs row p-1 gap-1 list-unstyled">
+                        <li class="col p-2 text-center active-option">How to Buy?</li>
+                        <li class="col p-2 text-center">How to Sell?</li>
+                        <li class="col p-2 text-center">How to Redeem?</li>
+                    </ul>
                     <div class="how-to-steps text-center">
                         <img src="./assets/images/how-to steps.png" alt="">
                     </div>
@@ -431,7 +439,7 @@
                         </ul>
                     </div>
                     <div class="col d-flex flex-column align-items-center">
-                        <ul class="d-flex footer-social-icons justify-content-around list-unstyled">
+                        <ul class="d-flex footer-social-icons justify-content-around list-unstyled my-3">
                             <li><a href="#"><img src="./assets/images/ant-design_linkedin-filled.png" alt=""></a></li>
                             <li><a href="#"><img src="./assets/images/bi_instagram.png" alt=""></a></li>
                             <li><a href="#"><img src="./assets/images/Group.png" alt=""></a></li>
@@ -443,7 +451,7 @@
                                 <img src="./assets/images/idbi.png" alt="">
                             </div>
                         </div>
-                        <div class="footer-augmont text-center">
+                        <div class="footer-augmont text-center my-3">
                             <p>Powered by Augmont</p>
                             <div>
                                 <img src="./assets/images/augmont.png" alt="">
@@ -452,10 +460,10 @@
 
                     </div>
                 </div>
-                <p class="text-center small">Muthoot Exim Pvt. Ltd. Muthoot Tower, 06th Floor, M.G Road, Ernakulam - 682 035.
+                <p class="text-center small my-3">Muthoot Exim Pvt. Ltd. Muthoot Tower, 06th Floor, M.G Road, Ernakulam - 682 035.
                     Call us on Tollfree no. 1800 102 1616 | E-Mail us on eswarna@muthootexim.com | CIN:U51909KL1998PTC012492 </p>
                     <hr>
-                <p class="text-center small">Copyright © 2020 by Muthoot Exim Pvt. Ltd. All Rights Reserved.</p>
+                <p class="text-center small my-3">Copyright © 2020 by Muthoot Exim Pvt. Ltd. All Rights Reserved.</p>
             </div>
         </footer>  
     </div>

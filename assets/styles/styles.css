@@ -166,6 +166,8 @@ nav ul.secondary-nav .btn-cta {
   -webkit-box-shadow: 0px 0px -20px 9px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 0px -20px 9px rgba(0, 0, 0, 0.15);
   z-index: 2;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 section.swarna-trust {

@@ -22,7 +22,7 @@
             <div class="logo-wrapper">
                 <img src="./assets/images/logo.png" alt="">
             </div>
-            <div id='nav-open-btn' class="menu-icon d-sm-none">
+            <div id='nav-open-btn' class="menu-icon d-lg-none">
                 <img src="./assets/images/hamburger-icon.png" alt="">
             </div>
             <nav class="menu-items d-lg-flex align-items-lg-center justify-content-lg-evenly">
@@ -44,76 +44,123 @@
         </div>
         <section class="hero bg-light position-relative">
             <div class="buy-now-card px-3 d-flex flex-column">
-                <div class="d-lg-block d-none mb-3" style="background: rgba(255, 255, 255, 0.69);backdrop-filter: blur(15px); border-radius: 10px;padding:.5em 1em ;">
-                    <ul class="buy-now-options row gap-2 list-unstyled">
-                        <li class="col p-2 text-center active-option">BUY</>
+                <div id="tab-nav-wrapper" class="mb-lg-3">
+                    <ul class="nav nav-pills justify-content-around gap-2 p-2" id="pills-tab" role="tablist">
+                        <li class="nav-item   text-center" role="presentation">
+                          <button class="nav-link active" id="pills-buy-tab" data-bs-toggle="pill" data-bs-target="#pills-buy" type="button" role="tab" aria-controls="pills-buy" aria-selected="true">BUY</button>
+                        </li>
+                        <li class="nav-item   text-center" role="presentation">
+                          <button class="nav-link" id="pills-sell-tab" data-bs-toggle="pill" data-bs-target="#pills-sell" type="button" role="tab" aria-controls="pills-sell" aria-selected="false">SELL</button>
+                        </li>
+                        <li class="nav-item   text-center" role="presentation">
+                          <button class="nav-link" id="pills-gift-tab" data-bs-toggle="pill" data-bs-target="#pills-gift" type="button" role="tab" aria-controls="pills-gift" aria-selected="false">GIFT</button>
+                        </li>
+                        <li class="nav-item   text-center" role="presentation">
+                            <button class="nav-link" id="pills-sip-tab" data-bs-toggle="pill" data-bs-target="#pills-sip" type="button" role="tab" aria-controls="pills-sip" aria-selected="false">SIP</button>
+                          </li>
+                          <li class="nav-item d-none d-md-block text-center" role="presentation">
+                            <button class="nav-link" id="pills-jewellery-tab" data-bs-toggle="pill" data-bs-target="#pills-jewellery" type="button" role="tab" aria-controls="pills-jewellery" aria-selected="false">JEWELLERY</button>
+                          </li>
+                          <li class="nav-item d-none d-md-block text-center" role="presentation">
+                            <button class="nav-link" id="pills-loan-tab" data-bs-toggle="pill" data-bs-target="#pills-loan" type="button" role="tab" aria-controls="pills-loan" aria-selected="false">LOAN</button>
+                          </li>
+                      </ul>
+                      
+                    <!-- <ul class="tab-navigation-options row gap-2 list-unstyled">
+                        <li class="col p-2 text-center active-option">BUY</li>
                         <li class="col p-2 text-center">SELL</li>
                         <li class="col p-2 text-center">GIFT</li>
                         <li class="col p-2 text-center">SIP</li>
-                    </ul>
-                </div>
-                <div class="container buy-now-wrapper d-flex">
-                    <div class="buy-now">
-                        <div class="d-flex flex-column mx-3 mt-3 ">
-                            <ul class="buy-now-options row p-2 gap-2 d-lg-none list-unstyled">
-                                <li class="col p-2 text-center active-option">BUY</li>
-                                <li class="col p-2 text-center">SELL</li>
-                                <li class="col p-2 text-center">GIFT</li>
-                                <li class="col p-2 text-center">SIP</li>
-                            </ul>
-                            <div class="buy-now-mode d-flex justify-content-startm mt-3">
-                                <div class="form-check">
-                                    <input type="radio" name="buy-mode" id="buy-mode-rupee" class="form-check-input">
-                                    <label for="buy-mode-rupee" class="form-check-label">Buy in Rupee</label>
-                                </div>
-                                <div class="form-check mx-3">
-                                    <input type="radio" name="buy-mode" id="buy-mode-grams" class="form-check-input">
-                                    <label for="buy-mode-grams" class="form-check-label">Buy in grams</label>
-                                </div>
-                            </div>
-                            <div class="buy-now-amount mt-3">
-                                <div>
-                                    <input type="text" name="amount" id="buy-amount" class="form-control border-0 border-bottom" placeholder="2000">
-                                    <label for="amount" class="d-inline opacity-75">0.3234g</label>
-                                    
-                                </div>
-                            </div>
-                            <ul class="buy-now-amount-suggestions row gap-2 mt-3 list-unstyled">
-                                <li class="col p-2 text-center rounded-pill border">Rs.1000</li>
-                                <li class="col p-2 text-center rounded-pill border">Rs.2000</li>
-                                <li class="col p-2 text-center rounded-pill border">Rs.3000</li>
-                                <li class="col p-2 text-center rounded-pill border">Rs.4000</li>
-                            </ul>
-                            <div class="slide-to-see my-2">
-                                <span class="opacity-75">Slide to see graph <img src="./assets/images/Arrow 1.png" alt=""></span>
-                            </div>
-                            <button id="buy-now-btn" class="btn text-center">Buy Now</button>
-                        </div>
-                    </div>
-                    <div class="chart d-none d-lg-block">
-                        <div class="container chart-wrapper d-flex flex-column justify-content-between">
-                            <div class="chart-prices d-flex justify-content-between">
-                                <div class="chart-prices-min">
-                                    <span>Rs. 63,342</span><br><span class="opacity-75">MIN</span>
-                                </div>
-                                <div class="chart-prices-max">
-                                    <span>Rs. 63,342</span><br><span class="opacity-75">MAX</span>
-                                </div>
-                            </div>
-                            <div class="chart-image text-center">
-                                <img src="./assets/images/chart-curve.png" alt="">
-                            </div>
-                            <div class="chart-timeline d-flex justify-content-between" style="font-size:.8em;">
-                                <div>This month</div>
-                                <div class="opacity-75">3 months</div>
-                                <div class="opacity-75">6 months</div>
-                                <div class="opacity-75">1 year</div>
-                            </div>
-                            
-                        </div>
-                    </div>
+                        <li class="col p-2 text-center">JEWELLERY</li>
+                        <li class="col p-2 text-center">LOAN</li>
+                    </ul> -->
                 </div>
 
+                <div id="cards-content-wrapper">
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-buy" role="tabpanel" aria-labelledby="pills-buy-tab">
+                            <div class="container buy-now-wrapper d-flex"> <div class="buy-now"> <div class="d-flex flex-column mx-3 mt-3 ">  <div class="buy-now-mode d-flex justify-content-startm mt-3"> <div class="form-check"> <input type="radio" name="buy-mode" id="buy-mode-rupee" class="form-check-input"> <label for="buy-mode-rupee" class="form-check-label">Buy in Rupee</label> </div> <div class="form-check mx-3"> <input type="radio" name="buy-mode" id="buy-mode-grams" class="form-check-input"> <label for="buy-mode-grams" class="form-check-label">Buy in grams</label> </div> </div> <div class="buy-now-amount mt-3"> <div> <input type="text" name="amount" id="buy-amount" class="form-control border-0 border-bottom" placeholder="2000"> <label for="amount" class="d-inline opacity-75">0.3234g</label> </div> </div> <ul class="buy-now-amount-suggestions row gap-2 mt-3 list-unstyled"> <li class="col p-1 text-center rounded-pill border">Rs.1000</li> <li class="col p-1 text-center rounded-pill border">Rs.2000</li> <li class="col p-1 text-center rounded-pill border">Rs.3000</li> <li class="col p-1 text-center rounded-pill border">Rs.4000</li> </ul> <div class="slide-to-see my-2"> <span class="opacity-75">Slide to see graph <img src="./assets/images/Arrow 1.png" alt=""></span> </div> <button id="buy-now-btn" class="btn text-center">Buy Now</button> </div> </div> <div class="chart d-none d-md-block"> <div class="container chart-wrapper d-flex flex-column justify-content-between"> <div class="chart-prices d-flex justify-content-between"> <div class="chart-prices-min"> <span>Rs. 63,342</span><br><span class="opacity-75">MIN</span> </div> <div class="chart-prices-max"> <span>Rs. 63,342</span><br><span class="opacity-75">MAX</span> </div> </div> <div class="chart-image text-center"> <img src="./assets/images/chart-curve.png" alt=""> </div> <div class="chart-timeline d-flex justify-content-between" style="font-size:.8em;"> <div>This month</div> <div class="opacity-75">3 months</div> <div class="opacity-75">6 months</div> <div class="opacity-75">1 year</div> </div> </div> </div> </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-sell" role="tabpanel" aria-labelledby="pills-sell-tab">
+                            <div class="container sell-now-wrapper d-flex"> <div class="sell-now"> <div class="d-flex flex-column mx-3 mt-3 ">  <div class="sell-now-mode d-flex justify-content-startm mt-3"> <div class="form-check"> <input type="radio" name="sell-mode" id="sell-mode-rupee" class="form-check-input"> <label for="sell-mode-rupee" class="form-check-label">Sell in Rupee</label> </div> <div class="form-check mx-3"> <input type="radio" name="sell-mode" id="sell-mode-grams" class="form-check-input"> <label for="sell-mode-grams" class="form-check-label">Sell in grams</label> </div> </div> <div class="sell-now-amount mt-3"> <div> <input type="text" name="amount" id="sell-amount" class="form-control border-0 border-bottom" placeholder="2000"> <label for="amount" class="d-inline opacity-75">0.3234g</label> </div> </div> <ul class="sell-now-amount-suggestions row gap-2 mt-3 list-unstyled"> <li class="col p-1 text-center rounded-pill border">Rs.1000</li> <li class="col p-1 text-center rounded-pill border">Rs.2000</li> <li class="col p-1 text-center rounded-pill border">Rs.3000</li> <li class="col p-1 text-center rounded-pill border">Rs.4000</li> </ul> <div class="slide-to-see my-2"> <span class="opacity-75">Slide to see graph <img src="./assets/images/Arrow 1.png" alt=""></span> </div> <button id="sell-now-btn" class="btn text-center">Sell Now</button> </div> </div> <div class="chart d-none d-md-block"> <div class="container chart-wrapper d-flex flex-column justify-content-between"> <div class="chart-prices d-flex justify-content-between"> <div class="chart-prices-min"> <span>Rs. 63,342</span><br><span class="opacity-75">MIN</span> </div> <div class="chart-prices-max"> <span>Rs. 63,342</span><br><span class="opacity-75">MAX</span> </div> </div> <div class="chart-image text-center"> <img src="./assets/images/sell-now-chart.png" alt=""> </div> <div class="chart-timeline d-flex justify-content-between" style="font-size:.8em;"> <div>This month</div> <div class="opacity-75">3 months</div> <div class="opacity-75">6 months</div> <div class="opacity-75">1 year</div> </div> </div> </div></div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-gift" role="tabpanel" aria-labelledby="pills-gift-tab">
+                            <div class="container gift-now-wrapper d-flex"> <div class="gift-now"> <div class="d-flex flex-column mx-3 mt-3 ">  <div class="gift-now-mode d-flex justify-content-startm mt-3"> <div class="form-check"> <input type="radio" name="gift-mode" id="gift-mode-rupee" class="form-check-input"> <label for="gift-mode-rupee" class="form-check-label">Gift in Rupee</label> </div> <div class="form-check mx-3"> <input type="radio" name="gift-mode" id="gift-mode-grams" class="form-check-input"> <label for="gift-mode-grams" class="form-check-label">Gift in grams</label> </div> </div> <div class="gift-now-amount mt-3"> <div> <input type="text" name="amount" id="gift-amount" class="form-control border-0 border-bottom" placeholder="2000"> <label for="amount" class="d-inline opacity-75">0.3234g</label> </div> </div> <ul class="gift-now-amount-suggestions row gap-2 mt-3 list-unstyled"> <li class="col p-1 text-center rounded-pill border">Rs.1000</li> <li class="col p-1 text-center rounded-pill border">Rs.2000</li> <li class="col p-1 text-center rounded-pill border">Rs.3000</li> <li class="col p-1 text-center rounded-pill border">Rs.4000</li> </ul> <div class="slide-to-see my-2"> <span class="opacity-75">Slide to see graph <img src="./assets/images/Arrow 1.png" alt=""></span> </div> <button id="gift-now-btn" class="btn text-center">Gift Now</button> </div> </div> <div class="chart d-none d-md-block"> <div class="container chart-wrapper d-flex flex-column justify-content-between"> <div class="chart-prices d-flex justify-content-between"> <div class="chart-prices-min"> <span>Rs. 63,342</span><br><span class="opacity-75">MIN</span> </div> <div class="chart-prices-max"> <span>Rs. 63,342</span><br><span class="opacity-75">MAX</span> </div> </div> <div class="chart-image text-center"> <img src="./assets/images/chart-curve.png" alt=""> </div> <div class="chart-timeline d-flex justify-content-between" style="font-size:.8em;"> <div>This month</div> <div class="opacity-75">3 months</div> <div class="opacity-75">6 months</div> <div class="opacity-75">1 year</div> </div> </div> </div> </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-sip" role="tabpanel" aria-labelledby="pills-sip-tab">
+                            <div class="container sip-now-wrapper d-flex"> <div class="sip-now"> <div class="d-flex flex-column mx-3 mt-3 ">  <div class="sip-now-mode d-flex justify-content-startm mt-3"> <div class="form-check"> <input type="radio" name="sip-mode" id="sip-mode-rupee" class="form-check-input"> <label for="sip-mode-rupee" class="form-check-label">Pay Monthly</label> </div> <div class="form-check mx-3"> <input type="radio" name="sip-mode" id="sip-mode-grams" class="form-check-input"> <label for="sip-mode-grams" class="form-check-label">Pay Weekly</label> </div> </div> <div class="sip-now-amount mt-3"> <div> <input type="text" name="amount" id="sip-amount" class="form-control border-0 border-bottom" placeholder="Installment Amount"> </div> <ul class="sip-now-amount-suggestions row gap-2 mt-3 list-unstyled"> <li class="col p-1 text-center rounded-pill border">Rs.1000</li> <li class="col p-1 text-center rounded-pill border">Rs.2000</li> <li class="col p-1 text-center rounded-pill border">Rs.3000</li> <li class="col p-1 text-center rounded-pill border">Rs.4000</li> </ul> </div> <div class="sip-now-amount my-3"> <div> <input type="text" name="amount" id="sip-amount" class="form-control border-0 border-bottom" placeholder="Duration"> </div> <ul class="sip-now-amount-suggestions row gap-2 mt-3 list-unstyled"> <li class="col p-1 text-center rounded-pill border">1 Years</li> <li class="col p-1 text-center rounded-pill border">2 Years</li> <li class="col p-1 text-center rounded-pill border">3 Years</li> <li class="col p-1 text-center rounded-pill border">5 Years</li> </ul> </div> <button id="sip-now-btn" class="btn text-center">Start an SIP</button> </div> </div> <div class="chart d-none d-lg-block"> <div class="container chart-wrapper d-flex flex-column justify-content-between"> <div class="chart-image text-center"> <img src="./assets/images/sip-chart.png" alt=""> </div> <div class="chart-timeline d-flex justify-content-between" style="font-size:.8em;"> <div>3 lacs <br> <span class="opacity-75">Your Investment</span> </div> <div>5 lacs <br> <span class="opacity-75">Value in 3 years*</span></div> </div> <div class="opacity-75">*Estimated value</div> </div> </div> </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-jewellery" role="tabpanel" aria-labelledby="pills-jewellery-tab">
+                            <div class="container jewellery-now-wrapper d-flex"> <div class="jewellery-now"> <div class="d-flex flex-column mx-3 mt-3 ">  <div class="d-flex justify-content-evenly my-4 "> <div><img src="./assets/images/Ellipse 84.png" alt=""><br><span>PENDANTS</span></div> <div><img src="./assets/images/Ellipse 85.png" alt=""><br><span>PENDANTS</span></div> <div><img src="./assets/images/Ellipse 86.png" alt=""><br><span>PENDANTS</span></div> <div><img src="./assets/images/Ellipse 87.png" alt=""><br><span>PENDANTS</span></div> </div> <p class="text-center">Choose from over <strong>1000</strong> items in over <strong>40</strong> categories!</p> <button id="sip-now-btn" class="btn text-center">Get Jewellery Delievered Now</button> </div> </div> </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-loan" role="tabpanel" aria-labelledby="pills-jewellery-loan">
+                            <div class="container loan-now-wrapper d-flex"> <div class="loan-now"> <div class="d-flex flex-column mx-3 mt-3 p-3">  <p class="text-center h6">Use your invested gold to borrow money in a minute</p> <div class="d-flex flex-column gap-2 justify-content-evenly my-4 w-100"> <div class="row mx-2"> <div class="col m-3 d-flex justify-content-evenly border border-1 flex-grow-1"> <div class="text-end px-2 align-self-center"><img src="./assets/images/loan-icon-1.png" alt=""></div> <div class=""><h4>Rs. 20,000</h4><span class="opacity-75 small"> Min. Borrow Value</span></div> </div> <div class="col m-3 d-flex justify-content-evenly border border-1 flex-grow-1"> <div class="text-end px-2 align-self-center"><img src="./assets/images/loan-icon-2.png" alt=""></div> <div class=""><h4>Rs. 80,332</h4><span class="opacity-75 small">Max. Borrow Value</span></div> </div> </div> <div class="row mx-2"> <div class="col m-3 d-flex justify-content-evenly border border-1 flex-grow-1"> <div class="text-end px-2 align-self-center"><img src="./assets/images/loan-icon-3.png" alt=""></div> <div class=""><h4>10 grams</h4><span class="opacity-75 small">Available Gold</span></div> </div> <div class="col m-3 d-flex justify-content-evenly border border-1 flex-grow-1"> <div class="text-end px-2 align-self-center"><img src="./assets/images/loan-icon-4.png" alt=""></div> <div class=""><h4>4 grams</h4><span class="opacity-75 small"> Lockable Gold</span></div> </div> </div> </div> <button id="loan-now-btn" class="btn text-center">I want a loan</button> </div> </div> </div>
+                        </div>
+                      </div>
+                    <!-- <div class="container buy-now-wrapper d-flex">
+                        <div class="buy-now">
+                            <div class="d-flex flex-column mx-3 mt-3 ">
+                                <!-- <ul class="buy-now-options row p-2 gap-2 d-lg-none list-unstyled">
+                                    <li class="col p-2 text-center">BUY</li>
+                                    <li class="col p-2 text-center">SELL</li>
+                                    <li class="col p-2 text-center">GIFT</li>
+                                    <li class="col p-2 text-center">SIP</li>
+                                </ul> 
+                                <div class="buy-now-mode d-flex justify-content-start mt-3">
+                                    <div class="form-check">
+                                        <input type="radio" name="buy-mode" id="buy-mode-rupee" class="form-check-input">
+                                        <label for="buy-mode-rupee" class="form-check-label">Buy in Rupee</label>
+                                    </div>
+                                    <div class="form-check mx-3">
+                                        <input type="radio" name="buy-mode" id="buy-mode-grams" class="form-check-input">
+                                        <label for="buy-mode-grams" class="form-check-label">Buy in grams</label>
+                                    </div>
+                                </div>
+                                <div class="buy-now-amount mt-3">
+                                    <div>
+                                        <input type="text" name="amount" id="buy-amount" class="form-control border-0 border-bottom" placeholder="2000">
+                                        <label for="amount" class="d-inline opacity-75">0.3234g</label>
+                                        
+                                    </div>
+                                </div>
+                                <ul class="buy-now-amount-suggestions row gap-2 mt-3 list-unstyled">
+                                    <li class="col p-1 text-center rounded-pill border">Rs.1000</li>
+                                    <li class="col p-1 text-center rounded-pill border">Rs.2000</li>
+                                    <li class="col p-1 text-center rounded-pill border">Rs.3000</li>
+                                    <li class="col p-1 text-center rounded-pill border">Rs.4000</li>
+                                </ul>
+                                <div class="slide-to-see my-2">
+                                    <span class="opacity-75">Slide to see graph <img src="./assets/images/Arrow 1.png" alt=""></span>
+                                </div>
+                                <button id="buy-now-btn" class="btn text-center">Buy Now</button>
+                            </div>
+                        </div>
+                        <div class="chart d-none d-lg-block">
+                            <div class="container chart-wrapper d-flex flex-column justify-content-between">
+                                <div class="chart-prices d-flex justify-content-between">
+                                    <div class="chart-prices-min">
+                                        <span>Rs. 63,342</span><br><span class="opacity-75">MIN</span>
+                                    </div>
+                                    <div class="chart-prices-max">
+                                        <span>Rs. 63,342</span><br><span class="opacity-75">MAX</span>
+                                    </div>
+                                </div>
+                                <div class="chart-image text-center">
+                                    <img src="./assets/images/chart-curve.png" alt="">
+                                </div>
+                                <div class="chart-timeline d-flex justify-content-between" style="font-size:.8em;">
+                                    <div>This month</div>
+                                    <div class="opacity-75">3 months</div>
+                                    <div class="opacity-75">6 months</div>
+                                    <div class="opacity-75">1 year</div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div> -->
+                </div> <!-- Cards content wrapper ends here-->
+
+                
                 <div class="buy-prices d-flex justify-content-between mx-5 mt-3">
                     <div class="current-price">
                         <span>Rs. 63,323.48</span> <span class="opacity-75 small">/gm</span><br>
@@ -169,11 +216,22 @@
                     <div class="opacity-75">Dealing with digital gold can’t get any simpler</div>
                 </div>
                 <div class="how-to-process flex-grow-1">
-                    <ul class="how-to-tabs row p-1 gap-1 list-unstyled align-items-center">
+                    <ul class="nav nav-pills how-to-tabs gap-1 align-items-center row" id="pills-tab" role="tablist">
+                        <li class="nav-item col p-2 text-center" role="presentation">
+                          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">How to Buy?</button>
+                        </li>
+                        <li class="nav-item col p-2 text-center " role="presentation">
+                          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">How to Sell?</button>
+                        </li>
+                        <li class="nav-item col p-2 text-center" role="presentation">
+                          <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">How to redeem?</button>
+                        </li>
+                    </ul>
+                    <!-- <ul class="how-to-tabs row p-1 gap-1 list-unstyled align-items-center">
                         <li class="col p-2 text-center active-option"><span>How to Buy?</span></li>
                         <li class="col p-2 text-center">How to Sell?</li>
                         <li class="col p-2 text-center">How to Redeem?</li>
-                    </ul>
+                    </ul> -->
                     <div class="how-to-steps text-center">
                         <div class="container d-flex flex-column">
                             <div class="step row my-5">

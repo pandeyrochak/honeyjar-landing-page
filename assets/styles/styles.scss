@@ -35,7 +35,7 @@ nav{
         li{
             display: block;
             margin: 1em;
-            padding: .2em;
+            // padding: .2em;
             border-left: 5px solid transparent;
             a{
                 text-decoration: none;
@@ -89,28 +89,27 @@ nav{
     max-width: 950px;
     height: auto;
     padding-bottom: 10px;
-    top: 17em;
+    top: 30%;
     left: 50%;
     transform: translate(-50%);
     width: 100%;
-    .buy-now-options li{
-        cursor: pointer;
-    }
-    .buy-now-wrapper{
-        border-radius: 10px;
-        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    
+    .buy-now-wrapper, .sell-now-wrapper, .gift-now-wrapper, .sip-now-wrapper, .jewellery-now-wrapper, .loan-now-wrapper{
+        border-radius: 0 0 10px 10px ;
+        box-shadow: 0px 0px 20px 9px rgba(0, 0, 0, 0.15);
+        
         background-color: white;
     }
-    .buy-now{
+    .buy-now, .sell-now, .gift-now, .sip-now, .jewellery-now, .loan-now{
         width: 100%;
-        .buy-now-options{
-            border-radius: 10px;
-            color: black;
-            background-color: #F6F7FB;
+        .buy-now-mode, .sell-now-mode, .gift-now-mode, .sip-now-mode{
+            font-size: .8em;
         }
-        .buy-now-amount-suggestions{
+        
+        .buy-now-amount-suggestions, .sell-now-amount-suggestions, .gift-now-amount-suggestions, .sip-now-amount-suggestions{
             li{
                 cursor: pointer;
+                font-size:.8em;
             }
         }
     }
@@ -123,16 +122,36 @@ nav{
     }
 }
 
-#buy-now-btn{
+#buy-now-btn, #sell-now-btn, #gift-now-btn, #sip-now-btn, #jewellery-now-btn, #loan-now-btn{
     background-color: #FFD600;
     border-radius: 8px;
     padding: 8px 4px;
     margin-bottom: 1em;
 }
-.active-option{
-    color: white;
-    background-color: #6510A5;
-    border-radius: 10px;    
+
+.custom-nav-link{
+    border: none;
+    padding: .6em 1em;
+    background-color: transparent;
+}
+.nav-link{
+    color: black !important;
+}
+.nav-link.active{
+    color: white !important;
+    background-color: #6510A5 !important;
+}
+
+#tab-nav-wrapper{
+    // background: rgba(255, 255, 255, 0.69);
+    // backdrop-filter: blur(15px);
+    //  border-radius: 10px;
+    //  padding:.5em 1em ;
+    background-color: rgb(238, 238, 238);
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 0;
+    box-shadow: 0px 0px -20px 9px rgba(0, 0, 0, 0.15);
+    z-index: 2;
 }
 
 
@@ -412,10 +431,11 @@ footer.footer{
 @media (min-width:990px){
     nav{
         position: unset;
-        width: 70%;
+        width: 80%;
         height: auto;
         background-color: transparent;
         z-index: 0;
+        font-size: 0.8em;
         ul.primary-nav{
             padding: unset;
             li{
@@ -462,8 +482,29 @@ footer.footer{
             min-width: 500px !important;
         }
     }
-    .buy-now{
+    .buy-now, .sell-now, .gift-now, .sip-now{
         border-right: 1px solid gray;
         width: 50% !important;
     }
+    .buy-now-wrapper, .sell-now-wrapper, .gift-now-wrapper, .sip-now-wrapper, .jewellery-now-wrapper, .loan-now-wrapper{
+        border-radius: 10px 10px 10px 10px !important;
+    }
+    
+
+}
+@media(min-width: 768px){
+    #tab-nav-wrapper{
+        background: rgba(255, 255, 255, 0.69);
+        backdrop-filter: blur(15px);
+        border-radius: 10px;
+    }
+    
+}
+@media (min-width: 1280px){
+    .top-navbar{
+        nav{
+            font-size: 1em;
+        }
+    }
+
 }

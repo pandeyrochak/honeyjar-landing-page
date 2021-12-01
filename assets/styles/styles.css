@@ -42,7 +42,6 @@ nav ul.primary-nav {
 nav ul.primary-nav li {
   display: block;
   margin: 1em;
-  padding: .2em;
   border-left: 5px solid transparent;
 }
 
@@ -102,36 +101,31 @@ nav ul.secondary-nav .btn-cta {
   max-width: 950px;
   height: auto;
   padding-bottom: 10px;
-  top: 17em;
+  top: 30%;
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
   width: 100%;
 }
 
-.buy-now-card .buy-now-options li {
-  cursor: pointer;
-}
-
-.buy-now-card .buy-now-wrapper {
-  border-radius: 10px;
-  -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+.buy-now-card .buy-now-wrapper, .buy-now-card .sell-now-wrapper, .buy-now-card .gift-now-wrapper, .buy-now-card .sip-now-wrapper, .buy-now-card .jewellery-now-wrapper, .buy-now-card .loan-now-wrapper {
+  border-radius: 0 0 10px 10px;
+  -webkit-box-shadow: 0px 0px 20px 9px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 20px 9px rgba(0, 0, 0, 0.15);
   background-color: white;
 }
 
-.buy-now-card .buy-now {
+.buy-now-card .buy-now, .buy-now-card .sell-now, .buy-now-card .gift-now, .buy-now-card .sip-now, .buy-now-card .jewellery-now, .buy-now-card .loan-now {
   width: 100%;
 }
 
-.buy-now-card .buy-now .buy-now-options {
-  border-radius: 10px;
-  color: black;
-  background-color: #F6F7FB;
+.buy-now-card .buy-now .buy-now-mode, .buy-now-card .buy-now .sell-now-mode, .buy-now-card .buy-now .gift-now-mode, .buy-now-card .buy-now .sip-now-mode, .buy-now-card .sell-now .buy-now-mode, .buy-now-card .sell-now .sell-now-mode, .buy-now-card .sell-now .gift-now-mode, .buy-now-card .sell-now .sip-now-mode, .buy-now-card .gift-now .buy-now-mode, .buy-now-card .gift-now .sell-now-mode, .buy-now-card .gift-now .gift-now-mode, .buy-now-card .gift-now .sip-now-mode, .buy-now-card .sip-now .buy-now-mode, .buy-now-card .sip-now .sell-now-mode, .buy-now-card .sip-now .gift-now-mode, .buy-now-card .sip-now .sip-now-mode, .buy-now-card .jewellery-now .buy-now-mode, .buy-now-card .jewellery-now .sell-now-mode, .buy-now-card .jewellery-now .gift-now-mode, .buy-now-card .jewellery-now .sip-now-mode, .buy-now-card .loan-now .buy-now-mode, .buy-now-card .loan-now .sell-now-mode, .buy-now-card .loan-now .gift-now-mode, .buy-now-card .loan-now .sip-now-mode {
+  font-size: .8em;
 }
 
-.buy-now-card .buy-now .buy-now-amount-suggestions li {
+.buy-now-card .buy-now .buy-now-amount-suggestions li, .buy-now-card .buy-now .sell-now-amount-suggestions li, .buy-now-card .buy-now .gift-now-amount-suggestions li, .buy-now-card .buy-now .sip-now-amount-suggestions li, .buy-now-card .sell-now .buy-now-amount-suggestions li, .buy-now-card .sell-now .sell-now-amount-suggestions li, .buy-now-card .sell-now .gift-now-amount-suggestions li, .buy-now-card .sell-now .sip-now-amount-suggestions li, .buy-now-card .gift-now .buy-now-amount-suggestions li, .buy-now-card .gift-now .sell-now-amount-suggestions li, .buy-now-card .gift-now .gift-now-amount-suggestions li, .buy-now-card .gift-now .sip-now-amount-suggestions li, .buy-now-card .sip-now .buy-now-amount-suggestions li, .buy-now-card .sip-now .sell-now-amount-suggestions li, .buy-now-card .sip-now .gift-now-amount-suggestions li, .buy-now-card .sip-now .sip-now-amount-suggestions li, .buy-now-card .jewellery-now .buy-now-amount-suggestions li, .buy-now-card .jewellery-now .sell-now-amount-suggestions li, .buy-now-card .jewellery-now .gift-now-amount-suggestions li, .buy-now-card .jewellery-now .sip-now-amount-suggestions li, .buy-now-card .loan-now .buy-now-amount-suggestions li, .buy-now-card .loan-now .sell-now-amount-suggestions li, .buy-now-card .loan-now .gift-now-amount-suggestions li, .buy-now-card .loan-now .sip-now-amount-suggestions li {
   cursor: pointer;
+  font-size: .8em;
 }
 
 .buy-now-card .chart {
@@ -143,17 +137,35 @@ nav ul.secondary-nav .btn-cta {
   height: 100%;
 }
 
-#buy-now-btn {
+#buy-now-btn, #sell-now-btn, #gift-now-btn, #sip-now-btn, #jewellery-now-btn, #loan-now-btn {
   background-color: #FFD600;
   border-radius: 8px;
   padding: 8px 4px;
   margin-bottom: 1em;
 }
 
-.active-option {
-  color: white;
-  background-color: #6510A5;
-  border-radius: 10px;
+.custom-nav-link {
+  border: none;
+  padding: .6em 1em;
+  background-color: transparent;
+}
+
+.nav-link {
+  color: black !important;
+}
+
+.nav-link.active {
+  color: white !important;
+  background-color: #6510A5 !important;
+}
+
+#tab-nav-wrapper {
+  background-color: #eeeeee;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 0;
+  -webkit-box-shadow: 0px 0px -20px 9px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px -20px 9px rgba(0, 0, 0, 0.15);
+  z-index: 2;
 }
 
 section.swarna-trust {
@@ -449,10 +461,11 @@ footer.footer p {
 @media (min-width: 990px) {
   nav {
     position: unset;
-    width: 70%;
+    width: 80%;
     height: auto;
     background-color: transparent;
     z-index: 0;
+    font-size: 0.8em;
   }
   nav ul.primary-nav {
     padding: unset;
@@ -492,9 +505,27 @@ footer.footer p {
   section.start-investing .testimonial-card {
     min-width: 500px !important;
   }
-  .buy-now {
+  .buy-now, .sell-now, .gift-now, .sip-now {
     border-right: 1px solid gray;
     width: 50% !important;
+  }
+  .buy-now-wrapper, .sell-now-wrapper, .gift-now-wrapper, .sip-now-wrapper, .jewellery-now-wrapper, .loan-now-wrapper {
+    border-radius: 10px 10px 10px 10px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  #tab-nav-wrapper {
+    background: rgba(255, 255, 255, 0.69);
+    -webkit-backdrop-filter: blur(15px);
+            backdrop-filter: blur(15px);
+    border-radius: 10px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .top-navbar nav {
+    font-size: 1em;
   }
 }
 /*# sourceMappingURL=styles.css.map */

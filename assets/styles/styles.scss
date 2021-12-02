@@ -155,7 +155,8 @@ nav{
     margin-left: auto;
     margin-right: auto;
     .nav{
-        padding-left: 6rem !important;
+        padding: 1em 2em;
+        // padding-left: 7em;
         width: 100%;
         overflow-x: scroll;
         flex-wrap: nowrap !important;
@@ -499,7 +500,7 @@ footer.footer{
         backdrop-filter: blur(15px);
         border-radius: 10px;
         .nav{
-            padding-left: unset;
+            padding-left: 0 !important;
             width: unset;
             overflow-x: unset
         }
@@ -513,4 +514,11 @@ footer.footer{
         }
     }
 
+}
+@media (max-width: 525px){
+    #tab-nav-wrapper{
+        .nav{
+            padding-left: 8em;
+        }
+    }
 }

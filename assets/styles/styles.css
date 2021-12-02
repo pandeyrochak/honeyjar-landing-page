@@ -171,7 +171,7 @@ nav ul.secondary-nav .btn-cta {
 }
 
 #tab-nav-wrapper .nav {
-  padding-left: 6rem !important;
+  padding: 1em 2em;
   width: 100%;
   overflow-x: scroll;
   -ms-flex-wrap: nowrap !important;
@@ -517,7 +517,7 @@ footer.footer p {
     border-radius: 10px;
   }
   #tab-nav-wrapper .nav {
-    padding-left: unset;
+    padding-left: 0 !important;
     width: unset;
     overflow-x: unset;
   }
@@ -526,6 +526,12 @@ footer.footer p {
 @media (min-width: 1280px) {
   .top-navbar nav {
     font-size: 1em;
+  }
+}
+
+@media (max-width: 525px) {
+  #tab-nav-wrapper .nav {
+    padding-left: 8em;
   }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -154,6 +154,16 @@ nav{
     z-index: 2;
     margin-left: auto;
     margin-right: auto;
+    .nav{
+        padding-left: 2.2rem !important;
+        width: 100%;
+        overflow-x: scroll;
+        flex-wrap: nowrap !important;
+        &::-webkit-scrollbar{
+            display: none;
+        }
+    }
+    
 }
 
 
@@ -185,42 +195,18 @@ section.swarna-trust{
 // *************
 .latest-offers{
     background-color: #F6F7FB;
-    .offers{
-        
         .offers-list{
-            margin-top: 1.2em;
-            overflow: auto;
-            width: 100%;
-            margin-left: auto;
-            margin-right: auto;
-            
             img{
                 padding: 1em;
                 width: 100%;
-                max-width: 400px;
+                max-width: 400px !important;
             }
             &::-webkit-scrollbar{
                 display: none;
             }
         }
-        .offers-indicators{
-            text-align: center;
-            span{
-                display: inline-block;
-                width: 10px;
-                height: 10px;
-                margin: 0 .2em;
-                background-color: #bdbdbd;
-                border-radius: 50%;
-
-                &:nth-child(1){
-                    background-color: #2f2f2f;
-                }
-            }
-        }
-        
-    }
 }   
+
 // ***************
 // How to section
 // ***************
@@ -427,9 +413,22 @@ footer.footer{
         color: white;
     }
 }
-// *******
-// Media Queries
-// *****
+
+
+
+// ****************************
+//* Booststrap carousel styles
+// ****************************
+
+#circle-indicators [data-bs-target], #circle-indicators-mobile [data-bs-target]{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+// ***************
+//* Media Queries
+// ***************
 @media (min-width:990px){
     nav{
         position: unset;
@@ -458,7 +457,7 @@ footer.footer{
         height: 50vh;
     }
     .latest-offers{
-        margin: 2em 6em;
+        margin: 2em;
         padding: 1.5em;
     }
     section.how-to{
@@ -499,6 +498,11 @@ footer.footer{
         background: rgba(255, 255, 255, 0.69);
         backdrop-filter: blur(15px);
         border-radius: 10px;
+        .nav{
+            padding-left: unset;
+            width: unset;
+            overflow-x: unset
+        }
     }
     
 }
